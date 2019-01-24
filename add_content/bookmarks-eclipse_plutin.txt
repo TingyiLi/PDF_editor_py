@@ -1,0 +1,281 @@
+1 Introduction@7
+2 Models of Speech Production and Hearing@11
+2.1 Organs of Speech Production@12
+2.2 Characteristics of Speech Signals@14
+2.3 Model of Speech Production@16
+2.3.1 Acoustic TubeModel of the Vocal Tract@17
+2.3.2 Digital All-PoleModel of the Vocal Tract@25
+2.4 Anatomy of Hearing@31
+2.5 Psychoacoustic Properties of the Auditory Organ@34
+2.5.1 Hearing and Loudness@34
+2.5.2 Spectral Resolution@36
+2.5.3 Masking@38
+Bibliography@39
+3 Spectral Transformations 41
+3.1 Fourier Transform of Continuous Signals@41
+3.2 Fourier Transform of Discrete Signals@43
+3.3 Linear Shift Invariant Systems@45
+3.3.1 Frequency Response of LSI Systems@47
+3.4 The z-transform@47
+3.4.1 Relation to FT@49
+3.4.2 Properties of the ROC@50
+3.4.3 Inverse z-transform@50
+3.4.4 z-transform Analysis of LSI Systems@52
+3.5 The Discrete Fourier Transform@53
+3.5.1 Linear and Cyclic Convolution.@56
+3.5.2 The DFT ofWindowed Sequences@58
+3.5.3 Spectral Resolution and Zero Padding@61
+3.5.4 Fast Computation of the DFT: The FFT@62
+3.5.5 Radix-2 Decimation-in-Time FFT@63
+3.6 Fast Convolution@67
+3.6.1 Fast Convolution of Long Sequences@67
+3.6.2 Fast Convolution by Overlap-Add@67
+3.6.3 Fast Convolution by Overlap-Save@68
+3.7 Cepstral Analysis@71
+3.7.1 Complex Cepstrum@71
+3.7.2 Real Cepstrum@72
+3.7.3 Applications of the Cepstrum@73
+Bibliography@76
+4 Filter Banks for Spectral Analysis and Synthesis 79
+4.1 Spectral Analysis Using Narrowband Filters@79
+4.1.1 Short-TermSpectral Analyzer@84
+4.1.2 Prototype Filter Design for the Analysis Filter Bank@88
+4.1.3 Short-TermSpectral Synthesizer@90
+4.1.4 Short-Term Spectral Analysis and Synthesis@92
+4.1.5 Prototype Filter Design for the Analysis–Synthesis Filter Bank@94
+4.1.6 Filter Bank Interpretation of the DFT@96
+4.2 Polyphase Network Filter Banks@99
+4.2.1 PPN Analysis Filter Bank@99
+4.2.2 PPN Synthesis Filter Bank@107
+4.3 QuadratureMirror Filter Banks@111
+4.3.1 Analysis–Synthesis Filter Bank@111
+4.3.2 Compensation of Aliasing and Signal Reconstruction@113
+4.3.3 Efficient Implementation@117
+Bibliography@121
+5 Stochastic Signals and Estimation 125
+5.1 Basic Concepts@125
+5.1.1 Random Events and Probability@125
+5.1.2 Conditional Probabilities@127
+5.1.3 Random Variables@127
+5.1.10
+Density Functions@128
+5.1.5 Conditional PDFs@129
+5.2 Expectations andMoments@130
+5.2.1 Conditional Expectations and Moments@131
+5.2.2 Examples@131
+5.2.3 Transformation of a Random Variable@134
+5.2.4 Relative Frequencies and Histograms@135
+5.3 Bivariate Statistics@136
+5.3.1 Marginal Densities@136
+5.3.2 Expectations andMoments@136
+5.3.3 Uncorrelatedness and Statistical Independence@137
+5.3.4 Examples of Bivariate PDFs@138
+5.3.5 Functions of Two Random Variables@139
+5.4 Probability and Information@141
+5.4.1 Entropy@141
+5.4.2 Kullback–LeiblerDivergence@141
+5.4.3 Mutual Information@142
+5.5 Multivariate Statistics@142
+5.5.1 MultivariateGaussian Distribution@143
+5.5.2 χ2-distribution@143
+5.6 Stochastic Processes@144
+5.6.1 Stationary Processes@144
+5.6.2 Auto-correlation and Auto-covariance Functions@145
+5.6.3 Cross-correlation and Cross-covariance Functions@146
+5.6.4 Multivariate Stochastic Processes@146
+5.7 Estimation of Statistical Quantities by Time Averages@148
+5.7.1 Ergodic Processes@148
+5.7.2 Short-Time Stationary Processes@149
+5.8 Power Spectral Densities@150
+5.8.1 White Noise@151
+5.9 Estimation of the Power Spectral Density@151
+5.9.1 The Periodogram@151
+5.9.2 Smoothed Periodograms@153
+5.10 Statistical Properties of Speech Signals@153
+5.11 Statistical Properties of DFT Coefficients@154
+5.11.1 Asymptotic Statistical Properties@155
+5.11.2 Signal-plus-NoiseModel@156
+5.11.3 Statistical Properties of DFT Coefficients for Finite Frame Lengths158
+5.12 Optimal Estimation@160
+5.12.1 MMSE Estimation@161
+5.12.2 Optimal Linear Estimator@162
+5.12.3 The Gaussian Case@163
+5.12.4 Joint Detection and Estimation@164
+Bibliography@166
+6 Linear Prediction 169
+6.1 Vocal TractModels and Short-TermPrediction@170
+6.2 Optimal Prediction Coefficients for Stationary Signals@177
+6.2.1 OptimumPrediction@177
+6.2.2 Spectral FlatnessMeasure@180
+6.3 Predictor Adaptation@183
+6.3.1 Block-Oriented Adaptation@183
+6.3.2 Sequential Adaptation@194
+6.4 Long-TermPrediction@198
+Bibliography@204
+7 Quantization 207
+7.1 Analog Samples and Digital Representation@207
+7.2 Uniform Quantization@209
+7.3 Non-uniformQuantization@217
+7.4 OptimalQuantization@227
+7.5 Adaptive Quantization@228
+7.6 Vector Quantization@234
+7.6.1 Principle@234
+7.6.2 The Complexity Problem@236
+7.6.3 Lattice Quantization@237
+7.6.4 Design of Optimal Vector Code Books@238
+7.6.5 Gain–Shape Vector Quantization@242
+Bibliography@243
+8 Speech Coding 245
+8.1 Classification of Speech Coding Algorithms@246
+8.2 Model-Based Predictive Coding@249
+8.3 DifferentialWaveform Coding@251
+8.3.1 First-Order DPCM@251
+8.3.2 Open-Loop and Closed-Loop Prediction@255
+8.3.3 Quantization of the Residual Signal@256
+8.3.4 Adaptive Differential Pulse CodeModulation@266
+8.4 Parametric Coding@268
+8.4.1 Vocoder Structures@268
+8.4.2 LPC Vocoder@271
+8.4.3 Quantization of the Predictor Coefficients@272
+8.5 Hybrid Coding@279
+8.5.1 Basic Codec Concepts@279
+8.5.2 Residual Signal Coding: RELP@288
+8.5.3 Analysis by Synthesis: CELP@296
+8.5.4 Analysis by Synthesis:MPE, RPE@307
+8.6 Adaptive Postfiltering@311
+Bibliography@315
+9 Error Concealment and Soft Decision Source Decoding 321
+9.1 Hard Decision Source Decoding@322
+9.2 Conventional Error Concealment@323
+9.3 Softbits and L-values@327
+9.3.1 Binary Symmetric Channel (BSC)@327
+9.3.2 Fading–AWGN Channel@335
+9.3.3 Channel with Inner SISO Decoding@341
+9.4 Soft Decision (SD) Source Decoding@342
+9.4.1 Parameter Estimation@344
+9.4.2 The A Posteriori Probabilities@346
+9.5 Application toModel Parameters@351
+9.5.1 Soft Decision Decoding without Channel Coding@352
+9.5.2 Soft Decision Decoding with Channel Coding@354
+9.6 Further Improvements@359
+Bibliography@361
+10 Bandwidth Extension (BWE) of Speech Signals 367
+10.1 Narrowband versusWideband Telephony@368
+10.2 Speech Coding with Integrated BWE@372
+10.3 BWE without Auxiliary Transmission@375
+10.3.1 Basic Approaches and Classification@375
+10.3.2 Spectral Envelope Estimation@378
+10.3.3 Extension of the Excitation Signal@381
+10.3.4 Example BWE Algorithm@383
+Bibliography@388
+11 Single and Dual Channel Noise Reduction 395
+11.1 Introduction@396
+11.2 LinearMMSE Estimators@398
+11.2.1 Non-causal IIRWiener filter@398
+11.2.2 The FIRWiener Filter@401
+11.3 Speech Enhancement in the DFT Domain@402
+11.3.1 TheWiener Filter Revisited@404
+11.3.2 Spectral Subtraction@406
+11.3.3 Estimation of the A Priori SNR@408
+11.3.4 Musical Noise and Countermeasures@409
+11.3.5 Aspects of Spectral Analysis/Synthesis@414
+11.4 Optimal Non-linear Estimators@417
+11.4.1 Maximum Likelihood Estimation@418
+11.4.2 Maximum A Posteriori Estimation@420
+11.4.3 MMSE Estimation@420
+11.4.10
+Magnitude@422
+11.5 Joint Optimum Detection and Estimation of Speech@425
+11.6 Computation of Likelihood Ratios@428
+11.7 Estimation of the A Priori Probability of Speech Presence@429
+11.7.1 A Hard-Decision Estimator Based on Conditional Probabilities@429
+11.7.2 Soft-Decision Estimation@430
+11.7.3 Estimation Based on the A Posteriori SNR@430
+11.8 VAD and Noise Estimation Techniques@431
+11.8.1 Voice Activity Detection@432
+11.8.2 Noise Estimation Using a Soft-Decision Detector@438
+11.8.3 Noise Power Estimation Based onMinimum Statistics@440
+11.9 Dual Channel Systems@449
+11.9.1 Noise Cancellation@455
+11.9.2 Noise Reduction@458
+11.9.3 Implementations of Dual Channel Noise Reduction Systems@459
+11.9.4 Combined Single and Dual Channel Noise Reduction@460
+Bibliography@462
+12 Multi-channel Noise Reduction 473
+12.1 Introduction@473
+12.2 SoundWaves@474
+12.3 Spatial Sampling of Sound Fields@476
+12.3.1 The FarfieldModel@478
+12.3.2 The UniformLinear Array@480
+12.3.3 Phase Ambiguity and Coherence@481
+12.3.4 Spatial Correlation Properties of Acoustic Signals@482
+12.4 Beamforming@483
+12.4.1 Delay-and-Sum Beamforming@483
+12.4.2 Filter-and-SumBeamforming@484
+12.5 PerformanceMeasures and Spatial Aliasing@487
+12.5.1 Array Gain and Array Sensitivity@487
+12.5.2 Directivity Pattern@488
+12.5.3 Directivity and Directivity Index@490
+12.5.4 Example: DifferentialMicrophones@491
+12.6 Design of Fixed Beamformers@494
+12.6.7
+Beamformer@494
+12.6.2 MVDR Beamformer with Limited Susceptibility@497
+12.7 Multi-channelWiener Filter and Postfilter@499
+12.8 Adaptive Beamformers@501
+12.8.1 The Frost Beamformer@501
+12.8.2 Generalized Side-Lobe Canceller@504
+12.8.3 Generalized Side-lobe Canceller with Adaptive Blocking Matrix@506
+12.9 Optimal Non-linear Multi-channel Noise Reduction@507
+Bibliography@507
+13 Acoustic Echo Control 511
+13.1 The Echo Control Problem@511
+13.2 Evaluation Criteria@517
+13.3 TheWiener Solution@519
+13.4 The LMS and NLMS Algorithms@520
+13.4.1 Derivation and Basic Properties@520
+13.5 Convergence Analysis and Control of the LMS Algorithm@522
+13.5.1 Convergence in the Absence of Interference@523
+13.5.2 Convergence in the Presence of Interference@526
+13.5.3 Filter Order of the Echo Canceller@529
+13.5.4 Stepsize Parameter@530
+13.6 Geometric Projection Interpretation of the NLMS Algorithm@533
+13.7 The Affine Projection Algorithm@535
+13.8 Least-Squares and Recursive Least-Squares Algorithms@537
+13.8.1 TheWeighted Least-Squares Algorithm@538
+13.8.2 The RLS Algorithm@539
+13.9 Block Processing and Frequency Domain Adaptive Filters@542
+13.9.1 Block LMS Algorithm@543
+13.9.2 The Exact Block NLMS Algorithm@543
+13.9.3 Frequency Domain Adaptive Filter (FDAF)@545
+13.9.4 Subband Acoustic Echo Cancellation@555
+13.10 AdditionalMeasures for Echo Control@556
+13.10.1 Echo Canceller with Center Clipper@556
+13.10.2 Echo Canceller with Voice-Controlled Switching@557
+13.10.3 Echo Canceller with Adaptive Postfilter in the Time Domain@559
+13.10.4 Echo Canceller with Adaptive Postfilter in the Frequency Domain 560
+13.10.5 Initialization with Perfect Sequences@561
+13.11 Stereophonic Acoustic Echo Control@563
+13.11.1 The Non-uniqueness Problem@565
+13.11.2 Solutions to the Non-uniqueness Problem@565
+Bibliography@567
+Appendix A Codec Standards 575
+A.1 Evaluation Criteria@576
+A.2 ITU-T/G.726: Adaptive Differential Pulse Code Modulation (ADPCM)@578
+A.3 ITU-T/G.728: Low-Delay CELP Speech Coder@579
+A.4 ITU-T/G.729: Conjugate-Structure Algebraic CELP Codec@582
+A.5 ITU-T/G.722: 7 kHz Audio Coding within 64 kbit/s@585
+A.6 ETSI-GSM06.10: Full Rate Speech Transcoding@586
+A.7 ETSI-GSM 06.20: Half Rate Speech Transcoding@588
+A.8 ETSI-GSM 06.60: Enhanced Full Rate Speech Transcoding@590
+A.9 ETSI-GSM 06.90: Adaptive Multi-Rate (AMR) Speech Transcoding@592
+A.10 ETSI/3GPP AMR Wideband Speech Transcoding@596
+A.11 ETSI/3GPP Extended AMR Wideband Codec, AMR-WB+@598
+A.12 TIA IS-102
+Wideband Spread-SpectrumSystems@600
+A.13 INMARSAT: Improved Multi-Band Excitation Codec (IMBE)@601
+Appendix B Speech Quality Assessment 603
+B.1 Auditive Speech QualityMeasures@603
+B.2 Instrumental Speech QualityMeasures@608
+Bibliography@610
+Index 613
