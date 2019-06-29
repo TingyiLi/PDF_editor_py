@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Flights
+{% endblock %}
+
+{% block body %}
+    <h1>Welcome to the Tingyi's Goodread world!</h1>
+
+    <form action="{{ url_for('login') }}" method="post">
+
+    <div class="form-group">
+        <input class="form-control" name="username" placeholder="Username">
+    </div>
+
+    <div class="form-group">
+        <input class="form-control" name="password" placeholder="Password">
+    </div>
+
+    <div class="form-group">
+        <button class="btn btn-primary">Login</button>
+    </div>
+
+    </form>
+
+    <p> Don't have an account? <a href="http://localhost:5000/reg" method = 'GET'>Register</a>?</p>
+{% endblock %}

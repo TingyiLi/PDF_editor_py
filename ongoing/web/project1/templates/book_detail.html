@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Flights
+{% endblock %}
+
+{% block body %}
+    <h1>Welcome to Book Page!</h1>
+    {% for b in book %}
+        <p> (ISBN: <a href="http://localhost:5000/{{b.isbn}}" method = 'POST'>{{ b.isbn }}</a>) This book page is about {{ b.title }} by {{ b.author }} in {{ b.year }} </p>
+    {% endfor %}
+
+    <h2>Reviews from users</h2>
+    <p>{{m2}}</p>
+    <ul>
+        {% for review in reviews %}
+        <li>
+            {{review.username}} gave {{review.rating}} stars about this book: {{review.review}}
+        </li>
+        {% endfor %}
+    </ul>
+
+    <h2>Reviews from Goodreads</h2>
+    <p>{{m1}}</p>
+    <ul>
+        <li>
+            The book has been reviewed for {{avg_wrc}} times with average rating {{avg_r}}
+        </li>
+    </ul>
+
+    <p>Leave your comment!</p>
+    {% for b in book %}
+        <form action="{{url_for('review_submission', isbn=b.isbn) }}" method="post">
+
+        <div class="form-group">
+            <input class="message_comment" name="comment" placeholder="Comment here!">
+        </div>
+
+        <div class="form-group">
+            <select class="form-control" name="rating">
+                {% for rate in rating %}
+                    <option value="{{ rate }}">{{ rate }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" name="username" placeholder="Username">
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary">Submit</button>
+        </div>
+
+        </form>
+    {% endfor %}
+{% endblock %}
